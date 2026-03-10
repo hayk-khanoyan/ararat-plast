@@ -25,12 +25,19 @@
                 <li><a href="#contact" data-i18n="nav.contact">Contact Us</a></li>
             </ul>
         </div>
-        <div class="lang-switcher">
-            <select id="language-select" aria-label="Select language">
-                <option value="hy" selected>🇦🇲 ARM</option>
-                <option value="ru">🇷🇺 RUS</option>
-                <option value="en">🇬🇧 ENG</option>
-            </select>
+        <div class="nav-right">
+            <div class="lang-switcher">
+                <select id="language-select" aria-label="Select language">
+                    <option value="hy" selected>🇦🇲 ARM</option>
+                    <option value="ru">🇷🇺 RUS</option>
+                    <option value="en">🇬🇧 ENG</option>
+                </select>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
@@ -209,7 +216,7 @@
                 'products.manual.title': 'Ձեռնարկային թաղանթ',
                 'products.manual.text': 'Թեթեւ և հարմար գլաններ ձեռքով պատրաստման համար։',
                 'products.machine.title': 'Մեքենայական թաղանթ',
-                'products.machine.text': 'Բարձր ծակապաշտպաxնություն ավտոմատ գծերի համար։',
+                'products.machine.text': 'Բարձր պաշտպաունություն ավտոմատ գծերի համար։',
                 'products.colored.title': 'Գունավոր թաղանթ',
                 'products.colored.text': 'Ուլտրամանուշակագույն պաշտպանություն և բրենդավորում տարբեր գույներով։',
                 'about.title': 'Մեր մասին',
@@ -257,6 +264,15 @@
                 setLanguage(select.value || 'en');
             } else {
                 setLanguage('en');
+            }
+
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            if (menuToggle && navLinks) {
+                menuToggle.addEventListener('click', () => {
+                    navLinks.classList.toggle('open');
+                    menuToggle.classList.toggle('active');
+                });
             }
         });
     </script>
