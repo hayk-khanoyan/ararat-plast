@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AraratPlast | Premium Stretch Film Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-left">
+            <a class="brand" href="#home" aria-label="AraratPlast Home">
+                <span class="brand-text">
+                    <span data-i18n="brand.first">Ararat</span><span data-i18n="brand.second">Plast</span>
+                </span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" data-i18n="nav.home">Home</a></li>
+                <li><a href="#about" data-i18n="nav.about">About Us</a></li>
+                <li><a href="#products" data-i18n="nav.products">Products</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="lang-switcher">
+            <select id="language-select" aria-label="Select language">
+                <option value="hy" selected>🇦🇲 ARM</option>
+                <option value="ru">🇷🇺 RUS</option>
+                <option value="en">🇬🇧 ENG</option>
+            </select>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1 data-i18n="hero.title">Securing Your Success</h1>
+            <p data-i18n="hero.subtitle">High-performance industrial stretch film for maximum load stability.</p>
+            <a href="#products" class="btn" data-i18n="hero.cta">View Products</a>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <div class="about-container">
+            <h2 data-i18n="about.title">About Us</h2>
+            <p data-i18n="about.text">
+                AraratPlast is a stretch film manufacturer located in Village Ararat, Armenia. We focus on reliable packaging solutions for logistics, agriculture and industry, combining modern equipment with flexible customer service.
+            </p>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <h2 data-i18n="products.title">Our Solutions</h2>
+        <div class="product-grid">
+            <div class="card">
+                <h3 data-i18n="products.manual.title">Manual Stretch</h3>
+                <p data-i18n="products.manual.text">Lightweight and ergonomic rolls for hand-wrapping pallets.</p>
+            </div>
+            <div class="card">
+                <h3 data-i18n="products.machine.title">Machine Stretch</h3>
+                <p data-i18n="products.machine.text">High-puncture resistance for high-speed automated lines.</p>
+            </div>
+            <div class="card">
+                <h3 data-i18n="products.colored.title">Colored Film</h3>
+                <p data-i18n="products.colored.text">UV protection and branding options in various tints.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="machine" class="machine-section">
+        <div class="machine-content">
+            <div class="machine-text">
+                <h2 data-i18n="machine.title">High‑Performance Production Line</h2>
+                <p data-i18n="machine.subtitle">
+                    Our stretch film is produced on a modern multi‑layer extrusion line that guarantees consistent thickness, high clarity and maximum load stability for every roll.
+                </p>
+                <ul>
+                    <li data-i18n="machine.point1">Multi‑layer technology for superior strength and puncture resistance.</li>
+                    <li data-i18n="machine.point2">Precise automatic control of film thickness and width.</li>
+                    <li data-i18n="machine.point3">High‑speed production for stable quality in large volumes.</li>
+                </ul>
+            </div>
+            <div class="machine-image">
+                <img src="assets/super-speed-stretch-film-making-machine.webp" alt="Stretch film production machine">
+            </div>
+        </div>
+    </section>
+
+    <section id="samples" class="samples">
+        <div class="samples-container">
+            <h2 data-i18n="samples.title">Film Samples</h2>
+            <p data-i18n="samples.subtitle">Examples of stretch film rolls and packaging produced on our lines.</p>
+            <div class="samples-grid">
+                <figure class="sample-item">
+                    <img src="assets/sample1.png" alt="Stretch film sample 1">
+                </figure>
+                <figure class="sample-item">
+                    <img src="assets/sample2.png" alt="Stretch film sample 2">
+                </figure>
+                <figure class="sample-item">
+                    <img src="assets/sample3.png" alt="Stretch film sample 3">
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <h2 data-i18n="contact.title">Request a Quote</h2>
+            <p data-i18n="contact.subtitle">Get in touch with our experts for bulk pricing.</p>
+            <form action="#">
+                <div class="form-group">
+                    <input type="text" placeholder="Full Name" data-i18n="contact.fullName" required>
+                    <input type="email" placeholder="Email Address" data-i18n="contact.email" required>
+                </div>
+                <textarea placeholder="Your Message (Quantity, Film Thickness, etc.)" data-i18n="contact.message" rows="5" required></textarea>
+                <button type="submit" class="btn" data-i18n="contact.submit">Send Inquiry</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p data-i18n="footer.text">&copy; 2026 AraratPlast Manufacturing. All rights reserved. Located in Village Ararat, Armenia.</p>
+    </footer>
+
+    <script>
+        const translations = {
+            en: {
+                'brand.first': 'Ararat',
+                'brand.second': 'Plast',
+                'nav.home': 'Home',
+                'nav.about': 'About Us',
+                'nav.products': 'Products',
+                'nav.contact': 'Contact Us',
+                'hero.title': 'Securing Your Success',
+                'hero.subtitle': 'High-performance industrial stretch film for maximum load stability.',
+                'hero.cta': 'View Products',
+                'products.title': 'Our Solutions',
+                'products.manual.title': 'Manual Stretch',
+                'products.manual.text': 'Lightweight and ergonomic rolls for hand-wrapping pallets.',
+                'products.machine.title': 'Machine Stretch',
+                'products.machine.text': 'High-puncture resistance for high-speed automated lines.',
+                'products.colored.title': 'Colored Film',
+                'products.colored.text': 'UV protection and branding options in various tints.',
+                'about.title': 'About Us',
+                'about.text': 'AraratPlast is a stretch film manufacturer located in Village Ararat, Armenia. We focus on reliable packaging solutions for logistics, agriculture and industry, combining modern equipment with flexible customer service.',
+                'samples.title': 'Film Samples',
+                'samples.subtitle': 'Examples of stretch film rolls and packaging produced on our lines.',
+                'machine.title': 'High-Performance Production Line',
+                'machine.subtitle': 'Our stretch film is produced on a modern multi-layer extrusion line that guarantees consistent thickness, high clarity and maximum load stability for every roll.',
+                'machine.point1': 'Multi-layer technology for superior strength and puncture resistance.',
+                'machine.point2': 'Precise automatic control of film thickness and width.',
+                'machine.point3': 'High-speed production for stable quality in large volumes.',
+                'contact.title': 'Request a Quote',
+                'contact.subtitle': 'Get in touch with our experts for bulk pricing.',
+                'contact.fullName': 'Full Name',
+                'contact.email': 'Email Address',
+                'contact.message': 'Your Message (Quantity, Film Thickness, etc.)',
+                'contact.submit': 'Send Inquiry',
+                'footer.text': '© 2026 AraratPlast Manufacturing. All rights reserved. Located in Village Ararat, Armenia.'
+            },
+            ru: {
+                'brand.first': 'Арарат',
+                'brand.second': 'Пласт',
+                'nav.home': 'Главная',
+                'nav.about': 'О компании',
+                'nav.products': 'Продукция',
+                'nav.contact': 'Связаться с нами',
+                'hero.title': 'Гарантия вашего успеха',
+                'hero.subtitle': 'Высококачественная стретч-плёнка для максимальной устойчивости грузов.',
+                'hero.cta': 'Смотреть продукцию',
+                'products.title': 'Наши решения',
+                'products.manual.title': 'Ручная плёнка',
+                'products.manual.text': 'Лёгкие и удобные рулоны для ручной обмотки паллет.',
+                'products.machine.title': 'Машинная плёнка',
+                'products.machine.text': 'Высокая стойкость к проколам для автоматических линий.',
+                'products.colored.title': 'Цветная плёнка',
+                'products.colored.text': 'UV-защита и брендинг в различных цветах.',
+                'about.title': 'О компании',
+                'about.text': 'АраратПласт — производитель стретч-плёнки, расположенный в селе Арарат, Армения. Мы предлагаем надёжные упаковочные решения для логистики, сельского хозяйства и промышленности, сочетая современное оборудование с гибким сервисом.',
+                'samples.title': 'Образцы плёнки',
+                'samples.subtitle': 'Примеры рулонов стретч-плёнки и упаковки, произведённых на наших линиях.',
+                'machine.title': 'Высокопроизводительная линия',
+                'machine.subtitle': 'Наша стретч-плёнка производится на современной многослойной линии экструзии, обеспечивающей стабильную толщину, высокую прозрачность и максимальную устойчивость груза.',
+                'machine.point1': 'Многослойная технология для повышенной прочности и стойкости к проколам.',
+                'machine.point2': 'Точный автоматический контроль толщины и ширины плёнки.',
+                'machine.point3': 'Высокая скорость производства для стабильного качества больших партий.',
+                'contact.title': 'Запросить коммерческое предложение',
+                'contact.subtitle': 'Свяжитесь с нашими специалистами для расчёта оптовых цен.',
+                'contact.fullName': 'Полное имя',
+                'contact.email': 'Электронная почта',
+                'contact.message': 'Ваше сообщение (количество, толщина плёнки и т.д.)',
+                'contact.submit': 'Отправить запрос',
+                'footer.text': '© 2026 Производство «АраратПласт». Все права защищены. Находимся в селе Арарат, Армения.'
+            },
+            hy: {
+                'brand.first': 'Արարատ',
+                'brand.second': 'Պլաստ',
+                'nav.home': 'Գլխավոր',
+                'nav.about': 'Մեր մասին',
+                'nav.products': 'Ապրանքներ',
+                'nav.contact': 'Կապ մեզ հետ',
+                'hero.title': 'Ապահովե՛ք ձեր հաջողությունը',
+                'hero.subtitle': 'Բարձր որակի ստրեչ թաղանթ առավելագույն կայունության համար։',
+                'hero.cta': 'Տեսնել ապրանքները',
+                'products.title': 'Մեր լուծումները',
+                'products.manual.title': 'Ձեռնարկային թաղանթ',
+                'products.manual.text': 'Թեթեւ և հարմար գլաններ ձեռքով պատրաստման համար։',
+                'products.machine.title': 'Մեքենայական թաղանթ',
+                'products.machine.text': 'Բարձր ծակապաշտպաxնություն ավտոմատ գծերի համար։',
+                'products.colored.title': 'Գունավոր թաղանթ',
+                'products.colored.text': 'Ուլտրամանուշակագույն պաշտպանություն և բրենդավորում տարբեր գույներով։',
+                'about.title': 'Մեր մասին',
+                'about.text': 'ԱրարատՊլաստ-ը ստրեչ թաղանթի արտադրող է, որը գտնվում է Արարատ գյուղում, Հայաստանում։ Մենք առաջարկում ենք հուսալի լուծումներ լոգիստիկայի, գյուղատնտեսության և արդյունաբերության համար՝ համատեղելով ժամանակակից սարքավորումները ճկուն սպասարկման հետ։',
+                'samples.title': 'Թաղանթի նմուշներ',
+                'samples.subtitle': 'Ստրեչ թաղանթի փաթեթավորման օրինակներ, որոնք արտադրվում են մեր գծերով։',
+                'machine.title': 'Բարձր արտադրողական գիծ',
+                'machine.subtitle': 'Մեր ստրեչ թաղանթը արտադրվում է ժամանակակից բազմաշերտ էքստրուզիոն գծով, որն ապահովում է հաստության կայունություն, թափանցիկություն և բեռնվածքի առավելագույն կայունություն յուրաքանչյուր գլանի համար։',
+                'machine.point1': 'Բազմաշերտ տեխնոլոգիա՝ բարձր ամրության և ծակապաշտպանության համար։',
+                'machine.point2': 'Թաղանթի հաստության և լայնության ավտոմատ և ճշգրիտ վերահսկում։',
+                'machine.point3': 'Բարձր արագության արտադրություն՝ մեծ ծավալների կայուն որակի համար։',
+                'contact.title': 'Ստանալ գնի առաջարկ',
+                'contact.subtitle': 'Կապվեք մեր մասնագետների հետ մեծածախ գների համար։',
+                'contact.fullName': 'Անուն, ազգանուն',
+                'contact.email': 'Էլ․ հասցե',
+                'contact.message': 'Ձեր հաղորդագրությունը (քանակ, թաղանթի հաստություն և այլն)',
+                'contact.submit': 'Ուղարկել հարցումը',
+                'footer.text': '© 2026 «ԱրարատՊլաստ» արտադրություն։ Բոլոր իրավունքները պաշտպանված են։ Գտնվում ենք Արարատ գյուղում, Հայաստան։'
+            }
+        };
+
+        function setLanguage(lang) {
+            const dict = translations[lang] || translations.en;
+            document.documentElement.lang = lang;
+
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                const text = dict[key];
+                if (!text) return;
+
+                if ('placeholder' in el && el.tagName !== 'BUTTON') {
+                    el.placeholder = text;
+                } else {
+                    el.textContent = text;
+                }
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const select = document.getElementById('language-select');
+            if (select) {
+                select.addEventListener('change', (e) => {
+                    setLanguage(e.target.value);
+                });
+                setLanguage(select.value || 'en');
+            } else {
+                setLanguage('en');
+            }
+        });
+    </script>
+
+</body>
+</html>
